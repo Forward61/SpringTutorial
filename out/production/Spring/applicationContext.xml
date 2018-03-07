@@ -7,4 +7,9 @@
     <bean id="userService" class="com.itheima.ioc.UserServiceImpl">
         <property name="userDao" ref="userDao"></property>
     </bean>
+    <bean id="bean2" class="com.itheima.instance.static_factory.MyBeanFactory"
+        factory-method="createBean"
+    ></bean>
+    <bean id="MyBean3Factory" class="com.itheima.instance.factory.MyBean3Factory"></bean>
+    <bean id="bean3" factory-bean="MyBean3Factory" factory-method="createBean"></bean>
 </beans>
