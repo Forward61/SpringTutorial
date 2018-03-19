@@ -6,6 +6,9 @@ package com.itheima.jdk;
 public class UserDaoImpl implements UserDao {
     @Override
     public void addUser() {
+
+        //测试出错时的异常通知执行
+        //int i = 10/0;
         System.out.println("-----------Test-----------值=" + "添加用户" + "," + "当前类=.()");
     }
 

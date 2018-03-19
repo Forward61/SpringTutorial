@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+">
+
+    <!--<bean id="userDao" class="com.itheima.ioc.UserDaoImpl"></bean>-->
+    <!--<bean id="userService" class="com.itheima.ioc.UserServiceImpl">-->
+        <!--<property name="userDao" ref="userDao"></property>-->
+    <!--</bean>-->
+
+    <!--1目标类 -->
+    <bean id = "userDao" class="com.itheima.jdk.UserDaoImpl"></bean>
+    <!--2切面类 -->
+    <bean id="myAspect" class="com.itheima.xml.MyAspect"></bean>
+    <aop:config>
+        <aop:aspect ref="myAspect">
+            <aop:pointcut id="myPointCut"  expression="execution(* com.itheima.jdk.*.*(..))"></aop:pointcut>
+            <aop:before method="myBefore" pointcut-ref="myPointCut"></aop:before>
+            <aop:after-returning method="myAfterReturning" pointcut-ref="myPointCut"></aop:after-returning>
+            <aop:around method="myAround" pointcut-ref="myPointCut"></aop:around>
+            <aop:after-throwing method="myAfterThrowing" pointcut-ref="myPointCut" throwing="e"></aop:after-throwing>
+            <aop:after method="myAfter" pointcut-ref="myPointCut"></aop:after>
+        </aop:aspect>
+
+    </aop:config>
+
+
+</beans>

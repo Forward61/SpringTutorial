@@ -28,4 +28,6 @@
         <!--3.4指定代理方式:true:使用cglib;false(默认):使用jdk动态代理 -->
         <property name="proxyTargetClass" value="true"></property>
     </bean>
+
+
 </beans>
