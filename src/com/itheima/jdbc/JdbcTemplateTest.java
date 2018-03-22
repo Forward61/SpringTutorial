@@ -55,4 +55,14 @@ public class JdbcTemplateTest {
             System.out.println("-----------Test-----------act值=" + act + "," + "当前类=.()");
         }
     }
+
+    @Test
+    public void xmlTranstionTest(){
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("jdbc_applicationContext.xml");
+        AccountDao accountDao = (AccountDao) applicationContext.getBean("accountDao");
+
+        accountDao.transfer("tom","jack", 100.0);
+        System.out.println("-----------Test-----------转账成功！值="  + "," + "当前类=.()");
+    }
 }
+

@@ -57,5 +57,17 @@ public class AccountDaoImpl implements AccountDao {
 
     }
 
+    @Override
+    public void transfer(String outUser, String inUser, Double money) {
+        //收款用户+
+        this.jdbcTemplate.update("update account set balance = balance+?" +
+        "WHERE  username=? ",money,inUser);
+        //模拟出错
+        int i= 1/0;
+        //汇款用户-
+        this.jdbcTemplate.update("update account set balance = balance-?" +
+                "WHERE  username=? ",money,outUser);
+    }
+
 
 }

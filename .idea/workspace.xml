@@ -112,8 +112,8 @@
       <file leaf-file-name="jdbc_applicationContext.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jdbc_applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="57" lean-forward="false" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+            <state relative-caret-position="258">
+              <caret line="46" column="67" lean-forward="false" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -122,14 +122,14 @@
       <file leaf-file-name="JdbcTemplateTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/itheima/jdbc/JdbcTemplateTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="37" column="10" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="37" selection-end-column="10" />
+            <state relative-caret-position="315">
+              <caret line="61" column="14" lean-forward="false" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1521726466000" expanded="true" signature="626:684" ph="create TABLE... account" />
-                <marker date="1521726466000" expanded="true" signature="626:747" ph="create TABLE... account" />
-                <marker date="1521726466000" expanded="true" signature="626:749" ph="create TABLE... account" />
-                <marker date="1521726466000" expanded="true" signature="1131:1153" ph="SELECT * FRO... account" />
+                <marker date="1521731436000" expanded="true" signature="626:684" ph="create TABLE... account" />
+                <marker date="1521731436000" expanded="true" signature="626:747" ph="create TABLE... account" />
+                <marker date="1521731436000" expanded="true" signature="626:749" ph="create TABLE... account" />
+                <marker date="1521731436000" expanded="true" signature="1131:1153" ph="SELECT * FRO... account" />
               </folding>
             </state>
           </provider>
@@ -163,8 +163,8 @@
       <file leaf-file-name="AccountDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/itheima/jdbc/AccountDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+            <state relative-caret-position="252">
+              <caret line="14" column="68" lean-forward="false" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -173,19 +173,22 @@
       <file leaf-file-name="AccountDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/itheima/jdbc/AccountDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="346">
+              <caret line="68" column="50" lean-forward="false" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#405#406#0" expanded="true" />
                 <element signature="e#453#454#0" expanded="true" />
                 <element signature="e#1457#1466#0" expanded="true" />
                 <element signature="e#1727#1736#0" expanded="true" />
-                <marker date="1521726117000" expanded="true" signature="537:585" ph="insert into account... " />
-                <marker date="1521726117000" expanded="true" signature="843:898" ph="update accou... " />
-                <marker date="1521726117000" expanded="true" signature="1163:1193" ph="DELETE FROM " />
-                <marker date="1521726117000" expanded="true" signature="1357:1390" ph="select * fro... account" />
-                <marker date="1521726117000" expanded="true" signature="1638:1659" ph="select * fro... account" />
+                <marker date="1521728282000" expanded="true" signature="537:585" ph="insert into account... " />
+                <marker date="1521728282000" expanded="true" signature="843:898" ph="update accou... " />
+                <marker date="1521728282000" expanded="true" signature="1163:1193" ph="DELETE FROM " />
+                <marker date="1521728282000" expanded="true" signature="1357:1390" ph="select * fro... account" />
+                <marker date="1521728282000" expanded="true" signature="1638:1659" ph="select * fro... account" />
+                <marker date="1521728282000" expanded="true" signature="1952:1990" ph="update accou... " />
+                <marker date="1521728282000" expanded="true" signature="1952:2020" ph="update accou... " />
+                <marker date="1521728282000" expanded="true" signature="2123:2199" ph="update accou... " />
               </folding>
             </state>
           </provider>
@@ -281,10 +284,10 @@
         <option value="$PROJECT_DIR$/src/com/itheima/annotation/MyAspect.java" />
         <option value="$PROJECT_DIR$/src/annotation_applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/com/itheima/annotation/TestAnnotationAspectj.java" />
-        <option value="$PROJECT_DIR$/src/jdbc_applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/com/itheima/jdbc/Account.java" />
         <option value="$PROJECT_DIR$/src/com/itheima/jdbc/AccountDao.java" />
         <option value="$PROJECT_DIR$/src/com/itheima/jdbc/AccountDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/jdbc/Account.java" />
+        <option value="$PROJECT_DIR$/src/jdbc_applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/com/itheima/jdbc/JdbcTemplateTest.java" />
       </list>
     </option>
@@ -433,33 +436,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JdbcTemplateTest.findAllAccountTest">
-    <configuration default="false" name="JdbcTemplateTest.mainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.itheima.jdbc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Spring" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.itheima.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="com.itheima.jdbc.JdbcTemplateTest" />
-      <option name="METHOD_NAME" value="mainTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.JdbcTemplateTest.xmlTranstionTest">
     <configuration default="false" name="JdbcTemplateTest.addAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -551,6 +528,32 @@
       <option name="PACKAGE_NAME" value="com.itheima.jdbc" />
       <option name="MAIN_CLASS_NAME" value="com.itheima.jdbc.JdbcTemplateTest" />
       <option name="METHOD_NAME" value="findAllAccountTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="JdbcTemplateTest.xmlTranstionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Spring" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.itheima.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.jdbc.JdbcTemplateTest" />
+      <option name="METHOD_NAME" value="xmlTranstionTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -952,19 +955,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.JdbcTemplateTest.mainTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.JdbcTemplateTest.addAccountTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.JdbcTemplateTest.findAccountByIdTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.JdbcTemplateTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.JdbcTemplateTest.findAllAccountTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.JdbcTemplateTest.addAccountTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.JdbcTemplateTest.findAccountByIdTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.JdbcTemplateTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.JdbcTemplateTest.findAllAccountTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.JdbcTemplateTest.xmlTranstionTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.JdbcTemplateTest.findAllAccountTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.JdbcTemplateTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.JdbcTemplateTest.findAccountByIdTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.JdbcTemplateTest.addAccountTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.JdbcTemplateTest.mainTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.JdbcTemplateTest.xmlTranstionTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.JdbcTemplateTest.findAllAccountTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.JdbcTemplateTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.JdbcTemplateTest.findAccountByIdTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.JdbcTemplateTest.addAccountTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1009,7 +1012,7 @@
       <workItem from="1520699132989" duration="590000" />
       <workItem from="1521128159576" duration="1739000" />
       <workItem from="1521295105949" duration="3554000" />
-      <workItem from="1521464708973" duration="8360000" />
+      <workItem from="1521464708973" duration="10162000" />
     </task>
     <servers />
   </component>
@@ -1035,8 +1038,8 @@
     <history-entry file="JdbcTemplateTest_mainTest - 2018.03.20 at 22h 17m 47s.xml">
       <configuration name="JdbcTemplateTest.mainTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAnnotationAspectj - 2018.03.20 at 22h 03m 02s.xml">
-      <configuration name="TestAnnotationAspectj" configurationId="JUnit" />
+    <history-entry file="JdbcTemplateTest_xmlTranstionTest - 2018.03.22 at 23h 10m 43s.xml">
+      <configuration name="JdbcTemplateTest.xmlTranstionTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestAnnotationAspectj_mainTest - 2018.03.20 at 22h 04m 13s.xml">
       <configuration name="TestAnnotationAspectj.mainTest" configurationId="JUnit" />
@@ -1046,7 +1049,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19761000" />
+    <option name="totallyTimeSpent" value="21563000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="6" />
@@ -1494,26 +1497,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jdbc_applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="57" lean-forward="false" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/itheima/xml/TestXmlAspectj.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/itheima/jdbc/AccountDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -1541,35 +1528,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/itheima/jdbc/AccountDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="68" lean-forward="false" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/itheima/jdbc/AccountDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="346">
+          <caret line="68" column="50" lean-forward="false" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#405#406#0" expanded="true" />
             <element signature="e#453#454#0" expanded="true" />
             <element signature="e#1457#1466#0" expanded="true" />
             <element signature="e#1727#1736#0" expanded="true" />
-            <marker date="1521726117000" expanded="true" signature="537:585" ph="insert into account... " />
-            <marker date="1521726117000" expanded="true" signature="843:898" ph="update accou... " />
-            <marker date="1521726117000" expanded="true" signature="1163:1193" ph="DELETE FROM " />
-            <marker date="1521726117000" expanded="true" signature="1357:1390" ph="select * fro... account" />
-            <marker date="1521726117000" expanded="true" signature="1638:1659" ph="select * fro... account" />
+            <marker date="1521728282000" expanded="true" signature="537:585" ph="insert into account... " />
+            <marker date="1521728282000" expanded="true" signature="843:898" ph="update accou... " />
+            <marker date="1521728282000" expanded="true" signature="1163:1193" ph="DELETE FROM " />
+            <marker date="1521728282000" expanded="true" signature="1357:1390" ph="select * fro... account" />
+            <marker date="1521728282000" expanded="true" signature="1638:1659" ph="select * fro... account" />
+            <marker date="1521728282000" expanded="true" signature="1952:1990" ph="update accou... " />
+            <marker date="1521728282000" expanded="true" signature="1952:2020" ph="update accou... " />
+            <marker date="1521728282000" expanded="true" signature="2123:2199" ph="update accou... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jdbc_applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="46" column="67" lean-forward="false" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/itheima/jdbc/JdbcTemplateTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="37" column="10" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="37" selection-end-column="10" />
+        <state relative-caret-position="315">
+          <caret line="61" column="14" lean-forward="false" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1521726466000" expanded="true" signature="626:684" ph="create TABLE... account" />
-            <marker date="1521726466000" expanded="true" signature="626:747" ph="create TABLE... account" />
-            <marker date="1521726466000" expanded="true" signature="626:749" ph="create TABLE... account" />
-            <marker date="1521726466000" expanded="true" signature="1131:1153" ph="SELECT * FRO... account" />
+            <marker date="1521731436000" expanded="true" signature="626:684" ph="create TABLE... account" />
+            <marker date="1521731436000" expanded="true" signature="626:747" ph="create TABLE... account" />
+            <marker date="1521731436000" expanded="true" signature="626:749" ph="create TABLE... account" />
+            <marker date="1521731436000" expanded="true" signature="1131:1153" ph="SELECT * FRO... account" />
           </folding>
         </state>
       </provider>
