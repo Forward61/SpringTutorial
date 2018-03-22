@@ -1,5 +1,7 @@
 package com.itheima.jdbc;
 
+import org.junit.Test;
+
 /**
  * Created by ningli on 2018/3/20.
  */
@@ -31,4 +33,10 @@ public class Account {
     public void setBalance(Double balance) {
         this.balance = balance;
     }
+
+    @Override
+    public String toString() {
+        return "Account [id=" + id +",username= "+username+"]";
+    }
+
 }
