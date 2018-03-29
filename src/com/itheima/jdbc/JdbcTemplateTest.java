@@ -64,5 +64,14 @@ public class JdbcTemplateTest {
         accountDao.transfer("tom","jack", 100.0);
         System.out.println("-----------Test-----------转账成功！值="  + "," + "当前类=.()");
     }
+
+    @Test
+    public void annotationTranstionTest(){
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("annota_trans_applicationContext.xml");
+        AccountDao accountDao = (AccountDao) applicationContext.getBean("accountDao");
+
+        accountDao.transfer("tom","jack", 100.0);
+        System.out.println("-----------Test-----------转账成功！值="  + "," + "当前类=.()");
+    }
 }
 

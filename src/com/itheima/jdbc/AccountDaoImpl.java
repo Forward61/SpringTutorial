@@ -3,6 +3,9 @@ package com.itheima.jdbc;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -58,6 +61,7 @@ public class AccountDaoImpl implements AccountDao {
     }
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED,isolation = Isolation.DEFAULT,readOnly = false)
     public void transfer(String outUser, String inUser, Double money) {
         //收款用户+
         this.jdbcTemplate.update("update account set balance = balance+?" +
