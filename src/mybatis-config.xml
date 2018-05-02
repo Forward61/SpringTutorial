@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--通过这个配置文件，完成mybatis与数据库的连接  -->
+<configuration>
+
+
+
+
+    <environments default="mysql">
+        <environment id="mysql">
+            <!-- 配置事务管理 ，采用JDBC管理事务-->
+            <transactionManager type="JDBC"/>
+            <!-- POOLED是mybatis的 数据源 -->
+            <!-- JNDI是基于tomcat的数据源 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"></property>
+                <property name="url" value="jdbc:mysql://118.24.52.46:3306/spring"></property>
+                <property name="username" value="root"/>
+                <property name="password" value="root"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+
+
+    <!-- pojo的映射文件UserMapper引入到配入到配置文件中 -->
+    <mappers>
+        <!-- resource要写成路径 -->
+        <mapper resource="com/itheima/mapper/CustomerMapper.xml"/>
+
+    </mappers>
+</configuration>
