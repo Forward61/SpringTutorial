@@ -1,6 +1,8 @@
 package com.itheima.MybatisTest;
 
 import com.itheima.po.Customer;
+import com.itheima.po.User;
+import com.itheima.utils.MybatisUtils;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSession;
@@ -73,5 +75,14 @@ public class MybatisTest {
         }
     }
 
+    @Test
+    public void findAllUSerTest(){
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        List<User> userList = sqlSession.selectList("com.itheima.mapper.UserMapper.findAllUser");
+        for (User user : userList){
+            System.out.println(user.toString());
+        }
+        sqlSession.close();
 
+    }
 }

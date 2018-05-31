@@ -29,6 +29,6 @@
     <mappers>
         <!-- resource要写成路径 -->
         <mapper resource="com/itheima/mapper/CustomerMapper.xml"/>
-
+        <mapper resource="com/itheima/mapper/UserMapper.xml"/>
     </mappers>
 </configuration>
