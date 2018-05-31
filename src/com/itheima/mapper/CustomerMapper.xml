@@ -8,7 +8,15 @@
     <select id="findCustomerbyName" parameterType="String" resultType="com.itheima.po.Customer">
         select *from t_customer where username like concat('%',#{value},'%')
     </select>
-
+    <select id="findCustomerbyNameAndJob" parameterType="String" resultType="com.itheima.po.Customer">
+        select *from t_customer where 1=1
+        <if test="username !=null and username!=''">
+            and username like concat('%',#{username},'%')
+        </if>
+        <if test="job!=null and job!=''">
+            and job = #{job}
+        </if>
+    </select>
     <insert id="addCustomer" parameterType="String">
         INSERT  into t_customer(username,job,phone) VALUES (#{username},#{job},#{phone})
     </insert>

@@ -85,4 +85,17 @@ public class MybatisTest {
         sqlSession.close();
 
     }
+
+    @Test
+    public void findCustomerByNameAndJobTest(){
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        Customer customer = new Customer();
+//        customer.setUsername("jack");
+//        customer.setJobs("teacher");
+        List<Customer> customerList = sqlSession.selectList("com.itheima.mapper.CustomerMapper.findCustomerbyNameAndJob",customer);
+        for (Customer customer1:customerList) {
+            System.out.println(customer1.toString());
+        }
+        sqlSession.close();
+    }
 }
