@@ -12,6 +12,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -90,12 +91,69 @@ public class MybatisTest {
     public void findCustomerByNameAndJobTest(){
         SqlSession sqlSession = MybatisUtils.getSqlSession();
         Customer customer = new Customer();
-//        customer.setUsername("jack");
-//        customer.setJobs("teacher");
-        List<Customer> customerList = sqlSession.selectList("com.itheima.mapper.CustomerMapper.findCustomerbyNameAndJob",customer);
+        customer.setUsername("jack");
+        customer.setJobs("teacher");
+        List<Customer> customerList = sqlSession.selectList("com.itheima.mapper.CustomerMapper.findCustomerbyNameAndJobTrim",customer);
         for (Customer customer1:customerList) {
             System.out.println(customer1.toString());
         }
         sqlSession.close();
     }
+    @Test
+    public void findCustomerByNameOrJobTest(){
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        Customer customer = new Customer();
+//        customer.setUsername("jack");
+        customer.setJobs("teacher");
+        List<Customer> customerList = sqlSession.selectList("com.itheima.mapper.CustomerMapper.findCustomerbyNameOrJob",customer);
+        for (Customer customer1:customerList) {
+            System.out.println(customer1.toString());
+        }
+        sqlSession.close();
+    }
+
+    @Test
+    public void updateCustomerTestSet(){
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        Customer customer = new Customer();
+        customer.setId(3);
+        customer.setPhone("138000002222");
+        int row = sqlSession.update("com.itheima.mapper.CustomerMapper.updateCustomerSet",customer);
+        if (row>0){
+            System.out.println("修改了 "+ row +"条数据");
+        }else {
+            System.out.println("执行修改失败");
+        }
+        sqlSession.commit();
+        sqlSession.close();
+    }
+
+    @Test
+    public void findCustomerByIdsTest(){
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+
+        List<Integer> ids= new ArrayList<Integer>();
+        ids.add(1);
+        ids.add(2);
+        List<Customer> customerList = sqlSession.selectList("com.itheima.mapper.CustomerMapper.findCustomerByIds", ids);
+        for (Customer customer : customerList){
+            System.out.println(customer);
+        }
+
+        sqlSession.close();
+    }
+    @Test
+    public void findCustomerByNameTest(){
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+
+        Customer customer = new Customer();
+        customer.setUsername("j");
+        List<Customer> customerList = sqlSession.selectList("com.itheima.mapper.CustomerMapper.findCustomerbyNameTest", customer);
+        for (Customer customer2 : customerList){
+            System.out.println(customer2);
+        }
+
+        sqlSession.close();
+    }
+
 }
