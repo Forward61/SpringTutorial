@@ -1,6 +1,7 @@
 package com.itheima.MybatisTest;
 
 import com.itheima.po.Customer;
+import com.itheima.po.Person;
 import com.itheima.po.User;
 import com.itheima.utils.MybatisUtils;
 import org.apache.ibatis.io.Resources;
@@ -152,6 +153,23 @@ public class MybatisTest {
         for (Customer customer2 : customerList){
             System.out.println(customer2);
         }
+
+        sqlSession.close();
+    }
+
+    /**
+     * 嵌套查询
+     */
+    @Test
+    public void findPersonByIdTest(){
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        Person person = sqlSession.selectOne("com.itheima.mapper.PersonMapper.findPersonById",1);
+        System.out.println("-----------Test-----------person值=" + person + "," + "当前类=.()");
+
+
+        Person person2 = sqlSession.selectOne("com.itheima.mapper.PersonMapper.findPersonById2",1);
+        System.out.println("-----------Test-----------person值=" + person2 + "," + "当前类=.()");
+
 
         sqlSession.close();
     }
