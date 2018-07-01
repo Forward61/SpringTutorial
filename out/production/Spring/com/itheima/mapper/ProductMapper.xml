@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.itheima.mapper.UserMapper">
+<mapper namespace="com.itheima.mapper.ProductMapper">
 
+    <select id="findProductById" parameterType="Integer" resultType="Product">
+        select * from tb_product where id in (
+           select product_id from tb_ordersitem where orders_id =#{id}
+        )
 
-    <insert id="addCustomer" parameterType="String">
-        INSERT  into t_customer(username,job,phone) VALUES (#{username},#{job},#{phone})
-    </insert>
+    </select>
+
+    <resultMap id="OrdersWithProductResult" type="Orders">
+        <id column="id" property="id"/>
+        <result property="number" column="number"/>
+        <collection property="productList" column="id" ofType="Product"
+                    select="com.itheima.mapper.ProductMapper.findProductById">
+
+        </collection>
+    </resultMap>
+
 
     <resultMap id="resultMap" type="com.itheima.po.User">
         <id property="id" column="t_id"></id>

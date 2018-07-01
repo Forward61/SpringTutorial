@@ -1,6 +1,7 @@
 package com.itheima.MybatisTest;
 
 import com.itheima.po.Customer;
+import com.itheima.po.Orders;
 import com.itheima.po.Person;
 import com.itheima.po.User;
 import com.itheima.utils.MybatisUtils;
@@ -171,6 +172,22 @@ public class MybatisTest {
         System.out.println("-----------Test-----------person值=" + person2 + "," + "当前类=.()");
 
 
+        sqlSession.close();
+    }
+
+    @Test
+    public void findUserTest(){
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        User user = sqlSession.selectOne("com.itheima.mapper.UserMapper.findUserWithOrders",1);
+        System.out.println("-----------Test-----------user值=" + user + "," + "当前类=.()");
+        sqlSession.close();
+    }
+
+    @Test
+    public void findOrdersTest(){
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        Orders orders = sqlSession.selectOne("com.itheima.mapper.OrdersMapper.findOrdersWithProduct",1);
+        System.out.println("-----------Test-----------user值=" + orders + "," + "当前类=.()");
         sqlSession.close();
     }
 
