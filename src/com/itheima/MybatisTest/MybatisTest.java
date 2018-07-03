@@ -1,5 +1,6 @@
 package com.itheima.MybatisTest;
 
+import com.itheima.dao.CustomerDao;
 import com.itheima.po.Customer;
 import com.itheima.po.Orders;
 import com.itheima.po.Person;
@@ -11,6 +12,8 @@ import org.apache.ibatis.session.SqlSession;
 
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -189,6 +192,14 @@ public class MybatisTest {
         Orders orders = sqlSession.selectOne("com.itheima.mapper.OrdersMapper.findOrdersWithProduct",1);
         System.out.println("-----------Test-----------user值=" + orders + "," + "当前类=.()");
         sqlSession.close();
+    }
+    
+    @Test
+    public void findCustomerByIdDaoTest(){
+        ApplicationContext act = new ClassPathXmlApplicationContext("applicationContext.xml");
+        CustomerDao customerDao = act.getBean(CustomerDao.class);
+        Customer customer = customerDao.findCustomerById(1);
+        System.out.println("-----------Test-----------customer值=" + customer + "," + "当前类=.()");
     }
 
 }

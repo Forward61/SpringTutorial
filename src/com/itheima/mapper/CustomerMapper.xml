@@ -56,11 +56,14 @@
             </if>
         </trim>
     </select>
-    <select id="findCustomerByIds" parameterType="List" resultType="com.itheima.po.Customer">
-        select * from t_customer where id in
-        <foreach collection="list" item="id" index="index" open="(" separator="," close=")">
-            #{id}
-        </foreach>
+    <!--<select id="findCustomerByIds" parameterType="List" resultType="com.itheima.po.Customer">-->
+        <!--select * from t_customer where id in-->
+        <!--<foreach collection="list" item="id" index="index" open="(" separator="," close=")">-->
+            <!--#{id}-->
+        <!--</foreach>-->
+    <!--</select>-->
+    <select id="findCustomerById" parameterType="Integer" resultType="customer">
+        SELECT * from t_customer where id = #{id}
     </select>
     <select id="findCustomerbyNameTest" parameterType="com.itheima.po.Customer" resultType="com.itheima.po.Customer">
         <bind name="pattern_username" value="'%'+_parameter.getUsername()+'%'"/>
