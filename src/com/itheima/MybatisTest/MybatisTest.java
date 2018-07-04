@@ -1,6 +1,7 @@
 package com.itheima.MybatisTest;
 
 import com.itheima.dao.CustomerDao;
+import com.itheima.mapper.CustomerMapper;
 import com.itheima.po.Customer;
 import com.itheima.po.Orders;
 import com.itheima.po.Person;
@@ -202,4 +203,11 @@ public class MybatisTest {
         System.out.println("-----------Test-----------customer值=" + customer + "," + "当前类=.()");
     }
 
+    @Test
+    public void findCustomerByIdDaoTest2(){
+        ApplicationContext act = new ClassPathXmlApplicationContext("applicationContext.xml");
+        CustomerMapper customerMapper = act.getBean(CustomerMapper.class);
+        Customer customer = customerMapper.findCustomerById(1);
+        System.out.println("-----------Test-----------customer值=" + customer + "," + "当前类=.()");
+    }
 }

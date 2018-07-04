@@ -39,6 +39,10 @@
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
 
+    <bean id="customerMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+        <property name="mapperInterface" value="com.itheima.mapper.CustomerMapper"/>
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
     <!--<bean id="userDao" class="com.itheima.ioc.UserDaoImpl"></bean>-->
     <!--<bean id="userService" class="com.itheima.ioc.UserServiceImpl">-->
         <!--<property name="userDao" ref="userDao"></property>-->
