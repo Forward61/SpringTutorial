@@ -73,8 +73,8 @@
         <bind name="pattern_username" value="'%'+_parameter.getUsername()+'%'"/>
         select *from t_customer where username like #{pattern_username}
     </select>
-    <insert id="addCustomer" parameterType="String">
-        INSERT  into t_customer(username,job,phone) VALUES (#{username},#{job},#{phone})
+    <insert id="addCustomer" parameterType="customer">
+        INSERT  into t_customer(username,jobs,phone) VALUES (#{username},#{jobs},#{phone})
     </insert>
 
     <update id="updateCustomer" parameterType="com.itheima.po.Customer" >

@@ -6,6 +6,7 @@ import com.itheima.po.Customer;
 import com.itheima.po.Orders;
 import com.itheima.po.Person;
 import com.itheima.po.User;
+import com.itheima.service.CustomerService;
 import com.itheima.utils.MybatisUtils;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -210,4 +211,20 @@ public class MybatisTest {
         Customer customer = customerMapper.findCustomerById(1);
         System.out.println("-----------Test-----------customer值=" + customer + "," + "当前类=.()");
     }
+
+    @Test
+    public void addCustomerTest(){
+        ApplicationContext act = new ClassPathXmlApplicationContext("applicationContext.xml");
+        CustomerService customerService = act.getBean(CustomerService.class);
+
+        Customer customer = new Customer();
+        customer.setId(4);
+        customer.setUsername("testTransaction");
+        customer.setJobs("doctor");
+        customer.setPhone("1580987655");
+        customerService.addCustomer(customer);
+        System.out.println("-----------Test-----------customer值=" + customer + "," + "当前类=.()");
+    }
+
+
 }

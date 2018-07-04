@@ -14,6 +14,7 @@
        http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
 ">
     <context:property-placeholder location="classpath:db.properties"/>
+    <context:component-scan base-package="com.itheima.service"/>
     <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
         <property name="driverClassName" value="${jdbc.driver}"/>
         <property name="url" value="${jdbc.url}"/>
