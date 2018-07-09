@@ -11,6 +11,7 @@
     <title>$Title$</title>
   </head>
   <body>
+  ok
   ${msg}
   </body>
 </html>
