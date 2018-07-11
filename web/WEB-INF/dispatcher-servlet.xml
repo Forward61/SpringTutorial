@@ -17,13 +17,25 @@
         <!-- 试试-->
         <property name="suffix" value=".jsp"/>
     </bean>
-    <mvc:annotation-driven conversion-service="conversionService"/>
-    <bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
-        <property name="converters" >
-            <set >
-                <bean class="com.convert.DateConvert"></bean>
-            </set>
+    <mvc:annotation-driven />
+    <mvc:resources mapping="/js/***" location="WEB-INF/"/>
+    <!--<mvc:annotation-driven conversion-service="conversionService"/>-->
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+        <property name="messageConverters">
+            <list>
+                <ref bean="jsonHttpMessageConverter" />
+            </list>
         </property>
     </bean>
+
+    <bean id="jsonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+        <property name="supportedMediaTypes">
+            <list>
+                <value>application/json;charset=UTF-8</value>
+            </list>
+        </property>
+    </bean>
+
+
 
 </beans>
