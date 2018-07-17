@@ -4,8 +4,18 @@ package com.po;
  * Created by ningli on 2018/7/9.
  */
 public class User {
+    private Integer id;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     private String username;
-    private Integer password;
+    private String password;
 
 
     public String getUsername() {
@@ -16,11 +26,11 @@ public class User {
         this.username = username;
     }
 
-    public Integer getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(Integer password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 }

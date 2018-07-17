@@ -34,12 +34,12 @@
     <mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
-            <bean class="com.interceptor.CustomerInterceptor"/>
+            <bean class="com.interceptor.LoginInterceptor"/>
         </mvc:interceptor>
-        <mvc:interceptor>
-            <mvc:mapping path="/hello"/>
-            <bean class="com.interceptor.CustomerInterceptor222"/>
-        </mvc:interceptor>
+        <!--<mvc:interceptor>-->
+            <!--<mvc:mapping path="/hello"/>-->
+            <!--<bean class="com.interceptor.CustomerInterceptor222"/>-->
+        <!--</mvc:interceptor>-->
     </mvc:interceptors>
     <bean id="jsonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
         <property name="supportedMediaTypes">

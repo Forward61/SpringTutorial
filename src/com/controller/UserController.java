@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 /**
@@ -60,9 +61,9 @@ public class UserController {
     @RequestMapping("/registerUser")
     public String registerUser(User user){
         String username = user.getUsername();
-        Integer password=user.getPassword();
+//        Integer password=user.getPassword();
         System.out.println("-----------Test-----------username值=" + username + "," + "当前类=.()");
-        System.out.println("-----------Test-----------password值=" + password + "," + "当前类=.()");
+//        System.out.println("-----------Test-----------password值=" + password + "," + "当前类=.()");
         return "index";
 
     }
@@ -118,7 +119,33 @@ public class UserController {
 //        return user;
 //    }
 
+        @RequestMapping(value = "/login",method = RequestMethod.GET)
+        public String toLogin(){
+            return "login";
+        }
 
+        @RequestMapping(value = "/login",method = RequestMethod.POST)
+        public String login(User user, Model model, HttpSession session){
+            String username = user.getUsername();
+            String password = user.getPassword();
+            if(username!= null&&username.equals("tom")&&password!=null && password.equals("123")){
+                session.setAttribute("USER_SESSION",user);
+                return "redirect:main";
+            }
+            model.addAttribute("msg","用户名或者密码错误，请重新登录");
+            return "login";
+
+        }
+        @RequestMapping("/main")
+        public String toMain(){
+            return "main";
+        }
+
+        @RequestMapping(value = "/logout")
+        public String logout(HttpSession session){
+            session.invalidate();
+            return "redirect:login";
+        }
 }
 
 
