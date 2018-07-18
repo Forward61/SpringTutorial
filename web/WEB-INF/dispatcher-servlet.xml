@@ -31,16 +31,16 @@
         </property>
     </bean>
 
-    <mvc:interceptors>
-        <mvc:interceptor>
-            <mvc:mapping path="/**"/>
-            <bean class="com.interceptor.LoginInterceptor"/>
-        </mvc:interceptor>
+    <!--<mvc:interceptors>-->
         <!--<mvc:interceptor>-->
-            <!--<mvc:mapping path="/hello"/>-->
-            <!--<bean class="com.interceptor.CustomerInterceptor222"/>-->
+            <!--<mvc:mapping path="/**"/>-->
+            <!--<bean class="com.interceptor.LoginInterceptor"/>-->
         <!--</mvc:interceptor>-->
-    </mvc:interceptors>
+        <!--&lt;!&ndash;<mvc:interceptor>&ndash;&gt;-->
+            <!--&lt;!&ndash;<mvc:mapping path="/hello"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<bean class="com.interceptor.CustomerInterceptor222"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;</mvc:interceptor>&ndash;&gt;-->
+    <!--</mvc:interceptors>-->
     <bean id="jsonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
         <property name="supportedMediaTypes">
             <list>
@@ -49,6 +49,9 @@
         </property>
     </bean>
 
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="defaultEncoding" value="UTF-8"/>
+    </bean>
 
 
 </beans>
