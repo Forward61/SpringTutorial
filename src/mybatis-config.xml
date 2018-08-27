@@ -19,9 +19,9 @@
             <!-- JNDI是基于tomcat的数据源 -->
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"></property>
-                <property name="url" value="jdbc:mysql://118.24.52.46:6001/mybatis"></property>
+                <property name="url" value="jdbc:mysql://:6001/mybatis"></property>
                 <property name="username" value="root"/>
-                <property name="password" value="Ln132939!@#"/>
+                <property name="password" value=""/>
             </dataSource>
         </environment>
     </environments>
